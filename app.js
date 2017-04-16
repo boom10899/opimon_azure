@@ -647,7 +647,7 @@ app.get('/savenode', function (req, res, next) {
   }
 
   var settingJSON = JSON.stringify(settings);
-  fs.writeFile('./public/settings.json', settingJSON, 'utf8', function(err) {
+  fs.writeFile('./settings.json', settingJSON, 'utf8', function(err) {
     // console.log(err);
     res.json({'status': 200, 'msg': 'success'});
   });
