@@ -24,7 +24,7 @@ app.get('/visualize.js', function(req, res){
 });
 
 app.get('/settings.json', function(req, res){
-    res.sendFile(path.join(__dirname, './public', 'settings.json'));
+    res.sendFile(path.join(__dirname, '.', 'settings.json'));
 });
 
 app.get('/flowmods', function (req, res) {
