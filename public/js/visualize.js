@@ -532,7 +532,10 @@ function sendNodeLocation() {
   .success(function(res){
       getData();
     })
-  .error(function(err){ console.log(err); });
+  .error(function(err){ 
+      console.log(err);
+      getData();
+    });
 }
 
 function resetTopo() {
