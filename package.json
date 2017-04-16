@@ -1,6 +1,7 @@
 {
     "name": "Opimon",
     "scripts": {
+	"install": "npm install express --save && npm install mongodb --save",
         "start": "node app.js"
     }
 }
