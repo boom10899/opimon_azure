@@ -1,0 +1,6 @@
+{
+    "name": "Opimon",
+    "scripts": {
+        "start": "node app.js"
+    }
+}
