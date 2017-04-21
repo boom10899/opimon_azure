@@ -521,7 +521,7 @@ function timeUpdate(value) {
 
 function sendNodeLocation() {
   var switchNode = [];
-  for(var i = 0; i < 1; i++) {
+  for(var i = 0; i < data["switch"].length; i++) {
     var temp = {};
     temp["id"] = data["switch"][i]["id"];
     temp["x"] = data["switch"][i]["x"];
