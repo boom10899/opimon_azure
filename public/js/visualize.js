@@ -528,7 +528,7 @@ function sendNodeLocation() {
     temp["y"] = data["switch"][i]["y"];
     switchNode.push(temp);
 
-    if(i%5 == 0) {
+    if(i%3 == 0) {
       var sendNode = switchNode;
       switchNode = [];
       $.get('/savenode', { switchNode : sendNode })
