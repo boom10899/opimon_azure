@@ -629,6 +629,8 @@ app.get('/savenode', function (req, res, next) {
   var switchNode = req.query["switchNode"];
   var settings = require('./settings.json');
 
+ res.json({'status': 200, 'msg': 'success'});
+
   for(var i in switchNode) {
     // console.log(switchNode[i]);
     if(settings[switchNode[i]["id"]] != undefined) {
