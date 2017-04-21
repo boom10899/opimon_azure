@@ -627,7 +627,7 @@ app.get('/gettime', function (req, res) {
 app.get('/savenode', function (req, res, next) {
   // console.log(req.query["switchNode"]);
   var switchNode = req.query["switchNode"];
-  var settings = require('./public/settings.json');
+  var settings = require('./settings.json');
 
   for(var i in switchNode) {
     // console.log(switchNode[i]);
