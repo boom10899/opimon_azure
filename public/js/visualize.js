@@ -527,15 +527,17 @@ function sendNodeLocation() {
     temp["x"] = data["switch"][i]["x"];
     temp["y"] = data["switch"][i]["y"];
     switchNode.push(temp);
+
+    if(i%10 == 0) {
+      var sendNode = switchNode;
+      switchNode = [];
+      $.get('/savenode', { switchNode : sendNode })
+      .success(function(res){ console.log("Complete"); })
+      .error(function(err){ console.log("Fail"); });
+    }
   }
-  $.get('/savenode', { switchNode : switchNode })
-  .success(function(res){
-      getData();
-    })
-  .error(function(err){ 
-      console.log(err);
-      getData();
-    });
+
+  getData(); 
 }
 
 function resetTopo() {
