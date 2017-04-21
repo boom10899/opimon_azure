@@ -528,13 +528,13 @@ function sendNodeLocation() {
     temp["y"] = data["switch"][i]["y"];
     switchNode.push(temp);
 
-    if(i%3 == 0) {
-      var sendNode = switchNode;
-      switchNode = [];
+    // if(i%3 == 0) {
+      // var sendNode = switchNode;
+      // switchNode = [];
       // $.get('/savenode', { switchNode : sendNode })
       // .success(function(res){ console.log("Complete"); })
       // .error(function(err){ console.log("Fail"); });
-    }
+    // }
   }
 
   getData(); 
