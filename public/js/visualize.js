@@ -559,7 +559,7 @@ function sendNodeLocation() {
 }
 
 function resetTopo() {
-  resetLocation = true;
+  // resetLocation = true;
   refreshData = true;
   // $("#topology").empty();
   getData();
