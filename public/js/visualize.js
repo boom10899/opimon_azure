@@ -543,18 +543,20 @@ function sendNodeLocation() {
     switchNode.push(temp);
   }
 
-  $.get('/savenode', { switchNode : switchNode })
-  .success(function(res){
-      if(refreshData) {
-        getData();
-      }
-    })
-  .error(function(err){
-      console.log(err);
-      if(refreshData) {
-        getData();
-      }
-  });
+  getData();
+
+  // $.get('/savenode', { switchNode : switchNode })
+  // .success(function(res){
+  //     if(refreshData) {
+  //       getData();
+  //     }
+  //   })
+  // .error(function(err){
+  //     console.log(err);
+  //     if(refreshData) {
+  //       getData();
+  //     }
+  // });
 
 }
 
